@@ -27,7 +27,7 @@
                                                 Détail
                                             </button>
                                         </a>
-                                        <a href="">
+                                        <a href="modifier/{{ $article->id }}">
                                             <button type="button" class="btn btn-sm btn-primary">Edit</button>
                                         </a>
                                         <a href="supprimer/{{ $article->id }}">
