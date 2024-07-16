@@ -36,4 +36,12 @@ class ArticleController extends Controller
 
         return view('articles.detail', compact('article'));
     }
+
+
+    public function supprimer_article($id) {
+        $article= Article::find($id);
+        $article->delete();
+        
+        return redirect()->back();
+    }
 }

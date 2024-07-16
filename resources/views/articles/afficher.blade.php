@@ -27,9 +27,14 @@
                                                 Détail
                                             </button>
                                         </a>
-
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <a href="">
+                                            <button type="button" class="btn btn-sm btn-primary">Edit</button>
+                                        </a>
+                                        <a href="supprimer/{{ $article->id }}">
+                                            <button type="button" class="btn btn-sm btn-danger">Supprimer</button>
+                                        </a>
                                     </div>
+                                    
                                   
                                 </div>
                             </div>
