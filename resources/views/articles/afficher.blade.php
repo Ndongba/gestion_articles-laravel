@@ -22,8 +22,8 @@
                                 <p class="card-text"> {{ Str::limit($article->description , 100);}}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="/articles/{{ $article->id }}">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <a href="detail/{{ $article->id }}">
+                                            <button type="button" class="btn btn-sm btn-success">
                                                 Détail
                                             </button>
                                         </a>

@@ -30,4 +30,10 @@ class ArticleController extends Controller
         $articles = Article::all(); 
         return view('articles.afficher', compact('articles'));
     }
+
+    public function detail_article($id) {
+        $article = Article ::find($id);
+
+        return view('articles.detail', compact('article'));
+    }
 }
