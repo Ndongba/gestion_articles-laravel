@@ -22,8 +22,7 @@ class ArticleController extends Controller
          ]);
 
         Article::create($request->all());
-        
-        return redirect();
+        return redirect()->back();
     }
 
     public function afficher_article() {
@@ -32,7 +31,7 @@ class ArticleController extends Controller
     }
 
     public function detail_article($id) {
-        $article = Article ::find($id);
+        $article = Article::find($id);
 
         return view('articles.detail', compact('article'));
     }
