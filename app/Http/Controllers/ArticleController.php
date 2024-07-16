@@ -25,4 +25,9 @@ class ArticleController extends Controller
         
         return redirect();
     }
+
+    public function afficher_article() {
+        $articles = Article::all(); 
+        return view('articles.afficher', compact('articles'));
+    }
 }
