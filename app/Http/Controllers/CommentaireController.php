@@ -18,4 +18,13 @@ class CommentaireController extends Controller
         Commentaire::create($request->all());
         return redirect()->back();
     }
+
+    public function delete_commentaire($id) {
+
+       $commentaire=Commentaire::find($id);
+       $commentaire->delete();
+
+       return redirect()->back();
+
+    }
 }

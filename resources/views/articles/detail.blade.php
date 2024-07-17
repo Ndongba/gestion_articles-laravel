@@ -66,7 +66,7 @@
                                         <a href="#" class="btn btn-primary" id="modifier">Modifier</a>
                                     </div>
                                     <div>
-                                        <a href="#" class="btn btn-danger" id="supprimer">Supprimer</a>
+                                        <a href="/commentaires/delete/{{ $commentaire->id }}" class="btn btn-danger" id="supprimer">Supprimer</a>
                                     </div>
                                 </div>
                             </div>

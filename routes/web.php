@@ -8,7 +8,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Articles
+// Partie Articles
 
 Route::get('ajouter',[ArticleController::class,'ajouter_article']);
 Route::post('traitement_article',[ArticleController::class,'traitement_article']);
@@ -19,6 +19,7 @@ Route::get('modifier/{id}',[ArticleController::class,'modifier_article']);
 Route::post('/sauvegarde/{id}',[ArticleController::class,'sauvegarde_article']);
 
 
-//Commentaires
+// Partie Commentaires
 
 Route::post('/commentaires/sauvegarder',[CommentaireController::class, 'sauvegarde_commentaire']);
+Route::get('/commentaires/delete/{id}', [CommentaireController::class, 'delete_commentaire']);
