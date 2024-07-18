@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Commentaire;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -32,8 +33,9 @@ class ArticleController extends Controller
 
     public function detail_article($id) {
         $article = Article::find($id);
+        $commentaires = $article->commentaires;
 
-        return view('articles.detail', compact('article'));
+        return view('articles.detail', compact('article','commentaires'));
     }
 
 
