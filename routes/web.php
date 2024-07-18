@@ -22,4 +22,6 @@ Route::post('/sauvegarde/{id}',[ArticleController::class,'sauvegarde_article']);
 // Partie Commentaires
 
 Route::post('/commentaires/sauvegarder',[CommentaireController::class, 'sauvegarde_commentaire']);
-Route::get('/commentaires/delete/{id}', [CommentaireController::class, 'delete_commentaire']);
+Route::get('/commentaires/delete/{id}',[CommentaireController::class, 'delete_commentaire']);
+Route::get('/commentaires/modifier_commentaire/{id}',[CommentaireController::class, 'modifier_commentaire']);
+Route::post('/sauvegarde_modification/{id}',[CommentaireController::class, 'sauvegarde_modification'])->name('sauvegarde_modification');

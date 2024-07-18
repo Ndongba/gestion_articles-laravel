@@ -13,7 +13,7 @@ class Commentaire extends Model
     protected $fillable = [
         'contenu',
         'nom_complet_auteur',
-        'article_id'
+        'article_id',
     ];
 
     public function article(): BelongsTo
